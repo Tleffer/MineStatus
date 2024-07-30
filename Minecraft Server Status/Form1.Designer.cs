@@ -38,6 +38,7 @@
             this.status = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pl_o = new System.Windows.Forms.Label();
+            this.menu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -164,12 +165,27 @@
             this.pl_o.Text = "n/a";
             this.pl_o.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // menu
+            // 
+            this.menu.BackColor = System.Drawing.Color.DimGray;
+            this.menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu.ForeColor = System.Drawing.Color.White;
+            this.menu.Location = new System.Drawing.Point(716, 414);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(40, 53);
+            this.menu.TabIndex = 10;
+            this.menu.Text = "⋮";
+            this.menu.UseVisualStyleBackColor = false;
+            this.menu.Click += new System.EventHandler(this.menu_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(757, 468);
+            this.Controls.Add(this.menu);
             this.Controls.Add(this.pl_o);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.status);
@@ -198,6 +214,7 @@
         private System.Windows.Forms.Label status;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label pl_o;
+        private System.Windows.Forms.Button menu;
     }
 }
 

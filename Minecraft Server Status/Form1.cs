@@ -48,5 +48,11 @@ namespace Minecraft_Server_Status
                 pl_o.Text = "n/a";
             }
         }
+
+        private void menu_Click(object sender, EventArgs e)
+        {
+            menu menu_window = new menu();
+            menu_window.Show();
+        }
     }
 }
